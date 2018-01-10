@@ -60,8 +60,6 @@
 
 <script src="js/database.js"></script>
 <script src="js/scrollto.js"></script>
-<script src-"js/preload.js"></script>
-<script src="js/scroll.js"></script>
 <script src="js/main.js"></script>
 <script src="js/top.js"></script>
 </body>
