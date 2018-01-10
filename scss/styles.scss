@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+@import 'reset';
+@import 'globals';
+@import 'mixins';
+@import 'about';
+@import 'contact';
+@import 'thankyou';
+@import 'gallery';
+@import 'nav';
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+
+
+body{
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+
+  /*home screen Nav starts*/
+
+
+
+
+
+
+  /*home screen Nav ends*/
+
+
+
+
+    #navB {
+      background-position: center center;
+      background-repeat:  no-repeat;
+      background-attachment: fixed;
+      background-size:  cover;
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      font-weight: 100;
+      font-size: 12px;
+      line-height: 30px;
+    }
+
+}

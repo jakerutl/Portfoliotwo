@@ -1,0 +1,10 @@
+/node_modules
+/vendor
+/prod/*
+*.ai
+*.psd
+*.mp4
+*.ogg
+*.wma
+env.php
+storage/*
