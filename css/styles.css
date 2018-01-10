@@ -345,6 +345,17 @@ table {
     opacity: 0.8;
     transform: scale(1.03); }
 
+video {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 5px;
+  border: 1px solid white; }
+  @media (max-width: 768px) {
+    video {
+      width: 90%; } }
+
 .lightbox {
   position: fixed;
   z-index: 14;
@@ -355,32 +366,6 @@ table {
   height: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.85); }
-  .lightbox video {
-    display: block;
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 80px;
-    padding: 5px;
-    border: 1px solid white; }
-    @media (max-width: 768px) {
-      .lightbox video {
-        width: 90%; } }
-  .lightbox .prev {
-    width: 50px;
-    height: 50px;
-    float: left;
-    background-color: white;
-    cursor: pointer;
-    margin-left: 120px;
-    display: none; }
-  .lightbox .next {
-    width: 50px;
-    height: 50px;
-    float: right;
-    background-color: white;
-    cursor: pointer;
-    margin-right: 120px;
-    display: none; }
   @media (max-width: 768px) {
     .lightbox {
       height: 300%;
@@ -465,7 +450,8 @@ table {
   width: 100%;
   height: 100%;
   padding: 0;
-  margin-bottom: -6px; }
+  padding-left: 0;
+  margin: 0; }
   @media (max-width: 768px) {
     .preloader {
       display: none; } }
@@ -474,7 +460,8 @@ table {
       display: none; } }
   .preloader video {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    border: none; }
 
 .arrow {
   margin-left: 10px;
@@ -817,12 +804,10 @@ body {
   /*home screen Nav starts*/
   /*home screen Nav ends*/
   #navB {
-    /*background-image: url(../images/background.jpg) ;*/
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    /*background-color: #999;*/
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-weight: 100;
     font-size: 12px;
