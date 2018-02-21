@@ -73,7 +73,7 @@ var dynamicContent = null;
   lightboxDesc.innerHTML = currentObject[currentIndex].image_desc;
   lightboxTitle.innerHTML = currentObject[currentIndex].image_title;
   lightboxClose.addEventListener('click', closeLightbox, false);
-  lightbox.addEventListener('click', closeLightbox, false);
+  // lightbox.addEventListener('click', closeLightbox, false);
 
   function closeLightbox(){
     document.ontouchmove = function(e){ return true; }

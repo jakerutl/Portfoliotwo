@@ -3,24 +3,24 @@
  ?>
 
 <div class="bodyOne">
-<div class="Aboutbody" id="1">
+<div class="Aboutbody">
   <h2 class="hidden">Main body</h2>
  <div class="pic">
-   <img src="images/low_poly_portrait2.png" alt="">
+   <img class="selfPic" src="images/low_poly_portrait2.png" alt="">
  </div>
 
   <div class="top">
     <div class="arrow"></div>
   </div>
   <div class="bio">
-   <h2 class="title">About Jake</h2>
+   <h2 class="title" id="about">About Jake</h2>
    <p class="info"></p>
   </div>
  </div>
 
 </div>
 
-<div class="greyBox" id="2">
+<div class="greyBox">
   <h1 id="portTitle">Portfolio</h1>
 </div>
 
@@ -54,11 +54,13 @@
    <div class="arrow"></div>
  </div>
 
+
  <?php
    require 'contact.php';
   ?>
 
 <script src="js/database.js"></script>
+<script src="js/openNav.js"></script>
 <script src="js/scrollto.js"></script>
 <script src="js/main.js"></script>
 <script src="js/top.js"></script>

@@ -17,12 +17,12 @@
 ?>
 
 <div class="bodyOne">
-   <div class="greyBox" id="3">
+   <div class="greyBox">
      <h1 class="section js-section" id="conTitle">Contact</h1>
    </div>
 <div class="Concontainer">
  <h1 class="contactTitle"> Let's talk!</h1>
-  <h2 class="contactHeader">Fill out the information below and send me an email!</h2>
+  <h2 class="contactHeader">If you think I am a good fit to join your team, send me an email!</h2>
 
 <form id="contact" action="contact.php" method="post">
 
