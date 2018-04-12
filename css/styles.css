@@ -302,6 +302,9 @@ table {
   overflow-y: scroll;
   overflow-x: hidden;
   margin-bottom: 20px; }
+  @media (max-width: 768px) {
+    .desciption {
+      height: 150px; } }
 
 ::-webkit-scrollbar {
   width: 8px; }
@@ -395,22 +398,36 @@ video {
   .lightbox p {
     text-align: center;
     font-size: 16px; }
-  .lightbox .prev {
-    width: 75px;
-    height: 75px;
-    background-color: grey;
+  .lightbox #prev {
     cursor: pointer;
-    left: 50px;
+    left: 30px;
     margin-bottom: 20px;
-    position: absolute; }
-  .lightbox .next {
-    width: 75px;
-    height: 75px;
-    background-color: grey;
-    cursor: pointer;
-    right: 50px;
     position: absolute;
-    margin-bottom: 20px; }
+    top: 50%;
+    font-size: 24px;
+    transition: 0.2s; }
+    .lightbox #prev:hover {
+      color: #2d2d2d; }
+    @media (max-width: 768px) {
+      .lightbox #prev {
+        top: 18%;
+        left: 30px;
+        font-size: 50px; } }
+  .lightbox #next {
+    cursor: pointer;
+    right: 30px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    transition: 0.2s; }
+    .lightbox #next:hover {
+      color: #2d2d2d; }
+    @media (max-width: 768px) {
+      .lightbox #next {
+        top: 18%;
+        right: 30px;
+        font-size: 50px; } }
 
 .close-lightbox {
   float: right;

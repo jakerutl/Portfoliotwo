@@ -21,6 +21,9 @@
   overflow-y: scroll;
   overflow-x:hidden;
   margin-bottom: 20px;
+  @include bp(mobile){
+    height: 150px;
+  }
 }
 
 
@@ -130,24 +133,47 @@ video{
     text-align: center;
     font-size: 16px;
   }
-  .prev{
-    width: 75px;
-    height: 75px;
-    background-color: grey;
+
+  #prev{
+    // width: 75px;
+    // height: 75px;
+    // background-color: grey;
     cursor: pointer;
-    left: 50px;
+    left: 30px;
     margin-bottom: 20px;
     position: absolute;
+    top: 50%;
+    font-size: 24px;
+    transition: 0.2s;
+    &:hover{
+      color: #2d2d2d;
+    }
+    @include bp(mobile){
+      top: 18%;
+      left: 30px;
+      font-size: 50px;
+    }
   }
 
-  .next{
-    width: 75px;
-    height: 75px;
-    background-color: grey;
+  #next{
+    // width: 75px;
+    // height: 75px;
+    // background-color: grey;
     cursor: pointer;
-    right: 50px;
-    position: absolute;
+    right: 30px;
     margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    transition: 0.2s;
+    &:hover{
+      color: #2d2d2d;
+    }
+    @include bp(mobile){
+      top: 18%;
+      right: 30px;
+      font-size: 50px;
+    }
   }
 }
 
@@ -213,6 +239,8 @@ video{
 .hidden{
   display:none !important;
 }
+
+
 
 
 /*gallery ends*/

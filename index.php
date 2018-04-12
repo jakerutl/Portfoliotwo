@@ -47,8 +47,8 @@
  <div class="desciption">
    <p class="img-desc">placeholder copy</p>
  </div>
-     <div class="prev"></div>
-     <div class="next"></div>
+     <div id="prev" class="glyphicon glyphicon-menu-left"></div>
+     <div id="next" class="glyphicon glyphicon-menu-right"></div>
  </section>
 </div>
 
@@ -66,6 +66,5 @@
 <script src="js/scrollto.js"></script>
 <script src="js/main.js"></script>
 <script src="js/top.js"></script>
-<script src="js/next.js"></script>
 </body>
 </html>
