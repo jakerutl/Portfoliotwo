@@ -9,10 +9,10 @@
 
 
 function submitMessage($name, $email, $phone, $message, $direct){
-  $to = "jake@jakerutledge.com"; 
+  $to = "jake@jakerutledge.com";
   $subj = "Message from customer submitted via site.com";
   $extra = "Reply-To: ".$email;
-  $msg = "Name: ".$name."\n\nEmail: ".$email."\n\nPhone: ".$phone."\n\nComments: ".$message;
+  $msg = "Name: " .$name. "\n\nEmail: ".$email."\n\nPhone: ".$phone."\n\nComments: ".$message;
   mail($to,$subj,$msg,$extra);
   $direct = $direct. "?name={$name}";
   redirect_to($direct);

@@ -13,7 +13,7 @@
     <div class="arrow"></div>
   </div>
   <div class="bio">
-   <h2 class="title" id="about">About Jake</h2>
+   <h2 class="title" id="about">About Me</h2>
    <p class="info"></p>
   </div>
  </div>
@@ -44,7 +44,9 @@
    </video>
    <img src="" alt="feature image" class="lightbox-img">
    <h1 class="img-title">placeholder</h1>
+ <div class="desciption">
    <p class="img-desc">placeholder copy</p>
+ </div>
      <div class="prev"></div>
      <div class="next"></div>
  </section>
@@ -64,5 +66,6 @@
 <script src="js/scrollto.js"></script>
 <script src="js/main.js"></script>
 <script src="js/top.js"></script>
+<script src="js/next.js"></script>
 </body>
 </html>

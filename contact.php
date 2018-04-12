@@ -43,7 +43,7 @@
 </fieldset>
 
 <fieldset>
-  <input class="street" placeholder="Street" type="text" name="street">
+  <input class="street" placeholder="Street" type="text" name="street" autocomplete="off">
 </fieldset>
 
 <fieldset>

@@ -1,10 +1,10 @@
 (function(){
 
   var theImages = document.querySelectorAll('.image-holder'),
-      next = document.querySelector('.next');
       theHeading = document.querySelector('.heading'),
       theSubhead = document.querySelector('.main-copy h2'),
       theSeasonText = document.querySelector('.main-copy p');
+
 
 var dynamicContent = null;
       function getPortfolio(){
@@ -47,9 +47,10 @@ var dynamicContent = null;
       image.addEventListener('click', changeElements, false);
     });
 
+
  function popLightbox(currentIndex, currentObject){
-   document.ontouchmove = function(e){ e.preventDefault(); }
-   document.body.style.overflow = "hidden";
+   // document.ontouchmove = function(e){ e.preventDefault(); }
+   // document.body.style.overflow = "hidden";
 
    let lightbox = document.querySelector('.lightbox');
    let video = lightbox.querySelector('video');
@@ -57,6 +58,7 @@ var dynamicContent = null;
 
    if(currentObject[currentIndex].cat_id === "1"){
      video.classList.remove('hidden');
+     video.muted = false;
      lightboxImg.classList.add('hidden');
      video.src = "videos/"+currentObject[currentIndex].image_path;
    }else{
@@ -78,6 +80,7 @@ var dynamicContent = null;
   function closeLightbox(){
     document.ontouchmove = function(e){ return true; }
     lightbox.style.display = 'none';
+    video.muted = true
     document.body.style.overflow = "auto";
     lightbox.querySelector('img').src = "";
     lightbox.querySelector('p').innerHTML = "";

@@ -140,8 +140,7 @@ table {
     overflow: hidden;
     margin-bottom: 20px;
     font-size: 24px;
-    color: white;
-    font-weight: bold; }
+    color: white; }
     @media (max-width: 768px) {
       .Aboutbody .info {
         overflow: hidden;
@@ -205,14 +204,12 @@ table {
 #contact {
   background: transparent;
   padding: 18px;
-  margin-top: 30px;
-  border-radius: 20px; }
+  margin-top: 30px; }
   #contact input[type="text"],
   #contact input[type="email"],
   #contact input[type="tel"] {
     width: 100%;
     border: 2px solid #52a2da;
-    border-radius: 50px;
     margin: 0 0 15px;
     padding: 10px;
     font-size: 18px; }
@@ -220,7 +217,6 @@ table {
     width: 100%;
     height: 200px;
     border: 2px solid #52a2da;
-    border-radius: 20px;
     padding: 10px;
     font-size: 18px;
     resize: none; }
@@ -238,8 +234,7 @@ table {
   background: #52a2da;
   color: #FFF;
   padding: 8px;
-  font-size: 15px;
-  border-radius: 20px; }
+  font-size: 15px; }
   @media (max-width: 1024px) {
     #contact button {
       width: 100%; } }
@@ -299,6 +294,27 @@ table {
   @media (max-width: 768px) {
     .subImagesContainer {
       width: 80%; } }
+
+.desciption {
+  width: 80%;
+  margin: 0 auto;
+  height: 100px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-bottom: 20px; }
+
+::-webkit-scrollbar {
+  width: 8px; }
+
+::-webkit-scrollbar-track {
+  background: transparent; }
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 2px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
 
 .catagory {
   width: 984px;
@@ -379,6 +395,22 @@ video {
   .lightbox p {
     text-align: center;
     font-size: 16px; }
+  .lightbox .prev {
+    width: 75px;
+    height: 75px;
+    background-color: grey;
+    cursor: pointer;
+    left: 50px;
+    margin-bottom: 20px;
+    position: absolute; }
+  .lightbox .next {
+    width: 75px;
+    height: 75px;
+    background-color: grey;
+    cursor: pointer;
+    right: 50px;
+    position: absolute;
+    margin-bottom: 20px; }
 
 .close-lightbox {
   float: right;
@@ -406,7 +438,7 @@ video {
     transform: rotate(-90deg); }
 
 .buttons {
-  width: 335px;
+  width: 326px;
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 60px; }
@@ -446,7 +478,7 @@ video {
 .Down {
   position: absolute;
   display: block;
-  width: 247px;
+  width: 280px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -537,7 +569,6 @@ video {
   z-index: 4;
   width: 50px;
   height: 50px;
-  border-radius: 10px;
   cursor: pointer;
   position: fixed;
   bottom: 60px;
@@ -551,13 +582,11 @@ video {
   @media (max-width: 768px) {
     .top {
       width: 75px;
-      height: 75px;
-      border-radius: 15px; } }
+      height: 75px; } }
   @media (max-width: 1024px) {
     .top {
       width: 75px;
-      height: 75px;
-      border-radius: 15px; } }
+      height: 75px; } }
   .top:hover {
     background-color: #52a2da;
     opacity: 1; }

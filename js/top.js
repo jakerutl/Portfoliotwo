@@ -12,10 +12,11 @@
   }
 
 
-function moveTop(e){
-e.preventDefault();
-TweenLite.to(window, 1, {scrollTo:0, autoKill:false});
-};
+  function moveTop(e){
+    e.preventDefault();
+    TweenLite.to(window, 0.5, {scrollTo: {y:0, autoKill:false}});
+  };
+
 
 function hideNav(){
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 10) {
